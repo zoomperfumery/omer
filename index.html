@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZOOM ATTAR AND PERFUME | Luxury Perfumes & Attars</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #f2f2f2;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: gold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1615634260167-c8cdede054de") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    color: #ddd;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 35px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #d4af37;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.section p {
+    max-width: 900px;
+    margin: auto;
+    color: #ccc;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: #000;
+    width: 280px;
+    border: 1px solid gold;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    padding: 15px;
+    color: gold;
+}
+
+.product-card p {
+    padding: 0 15px 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+.size-box {
+    padding: 10px 15px 15px;
+}
+
+.size-box button {
+    margin: 5px 5px 0;
+    padding: 6px 14px;
+    border: 1px solid gold;
+    background: transparent;
+    color: gold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.size-box button:hover {
+    background: gold;
+    color: #000;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d4af37;
+}
+.buy-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    width: 100%;
+    background: gold;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #d4af37;
+}
+
+
+/* CONTACT */
+.contact p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ZOOM ATTAR AND PERFUME</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Experience the Essence of Luxury</h2>
+    <p>Premium Arabic Attars, Daily Use Fragrances & Luxury Perfumes crafted for elegance.</p>
+    <button onclick="comingSoon()">Shop Online</button>
+</section>
+
+<section class="section" id="about">
+    <h3>About ZOOM ATTAR AND PERFUME</h3>
+    <p>
+        ZOOM ATTAR AND PERFUME is a premium fragrance brand offering high-quality Arabic attars,
+        daily-use perfumes, and luxury blends. Our fragrances are designed for long-lasting
+        freshness, elegance, and sophistication.
+    </p>
+</section>
+
+<section class="section" id="products">
+    <h3>Our Products</h3>
+    <div class="products">
+
+        <div class="product-card">
+    <img src="z1.jpeg" alt="Pasha Attar" onclick="orderWhatsApp('Pasha Attar')">
+
+    <h4>Pasha Attar</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Pasha Attar','30ml',349)">30ml</button>
+        <button onclick="selectSize('Pasha Attar','60ml',499)">60ml</button>
+        <button onclick="selectSize('Pasha Attar','100ml',699)">100ml</button>
+        <div class="price" id="price-Pasha Attar">Select size</div>
+        <button class="buy-btn" id="buy-Pasha Attar" onclick="orderWhatsApp('Pasha Attar')">Buy Now</button>
+    </div>
+</div>
+
+
+        <div class="product-card">
+    <img src="z2.jpeg" alt="Black opium" onclick="orderWhatsApp('Black opium')">
+
+    <h4>Black opium</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Black opium','30ml',349)">30ml</button>
+        <button onclick="selectSize('Black opium','60ml',499)">60ml</button>
+        <button onclick="selectSize('Black opium','100ml',649)">100ml</button>
+
+        <div class="price" id="price-Black opium">Select size</div>
+        <button class="buy-btn" id="buy-Black opium" onclick="orderWhatsApp('Black opium')">Buy Now</button>
+    </div>
+</div>
+
+
+         <div class="product-card">
+    <img src="z3.jpeg" alt="Bloodlust" onclick="orderWhatsApp('Bloodlust')">
+
+    <h4>Bloodlust</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Bloodlust','30ml',399)">30ml</button>
+        <button onclick="selectSize('Bloodlust','60ml',649)">60ml</button>
+        <button onclick="selectSize('Bloodlust','100ml',850)">100ml</button>
+
+        <div class="price" id="price-Bloodlust">Select size</div>
+        <button class="buy-btn" id="buy-Bloodlust" onclick="orderWhatsApp('Bloodlust')">Buy Now</button>
+    </div>
+</div>
+
+         <div class="product-card">
+    <img src="z4.jpeg" alt="jannah al shukrah" onclick="orderWhatsApp('Jannah al shukrah')">
+
+    <h4>Jannah al shukrah</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Jannah al shukrah','30ml',349)">30ml</button>
+        <button onclick="selectSize('Jannah al shukrah','60ml',549)">60ml</button>
+        <button onclick="selectSize('Jannah al shukrah','100ml',749)">100ml</button>
+
+        <div class="price" id="price-Jannah al shukrah">Select size</div>
+        <button class="buy-btn" id="buy-Jannah al shukrah" onclick="orderWhatsApp('Jannah al shukrah')">Buy Now</button>
+    </div>
+</div>
+
+         <div class="product-card">
+    <img src="z5.jpeg" alt="Saudi oudh" onclick="orderWhatsApp('Saudi oudh')">
+
+    <h4>Saudi oudh</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Saudi oudh','30ml',349)">30ml</button>
+        <button onclick="selectSize('Saudi oudh','60ml',499)">60ml</button>
+        <button onclick="selectSize('Saudi oudh','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Saudi oudh">Select size</div>
+        <button class="buy-btn" id="buy-Saudi oudh" onclick="orderWhatsApp('Saudi oudh')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z6.jpeg" alt="Fiesta al musk" onclick="orderWhatsApp('Fiesta al musk')">
+
+    <h4>Fiesta al musk</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Fiesta al musk','30ml',399)">30ml</button>
+        <button onclick="selectSize('Fiesta al musk','60ml',599)">60ml</button>
+        <button onclick="selectSize('Fiesta al musk','100ml',899)">100ml</button>
+
+        <div class="price" id="price-Fiesta al musk">Select size</div>
+        <button class="buy-btn" id="buy-Fiesta al musk" onclick="orderWhatsApp('Fiesta al musk')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z7.jpeg" alt="Sabaya" onclick="orderWhatsApp('Sabaya')">
+
+    <h4>Sabaya</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Sabaya','30ml',249)">30ml</button>
+        <button onclick="selectSize('Sabaya','60ml',399)">60ml</button>
+        <button onclick="selectSize('Sabaya','100ml',599)">100ml</button>
+
+        <div class="price" id="price-Sabaya">Select size</div>
+        <button class="buy-btn" id="buy-Sabaya" onclick="orderWhatsApp('Sabaya')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z8.jpeg" alt="Amouge oudh" onclick="orderWhatsApp('Amouge oudh')">
+
+    <h4>Amouge oudh</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Amouge oudh','30ml',349)">30ml</button>
+        <button onclick="selectSize('Amouge oudh','60ml',499)">60ml</button>
+        <button onclick="selectSize('Amouge oudh','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Amouge oudh">Select size</div>
+        <button class="buy-btn" id="buy-Amouge oudh" onclick="orderWhatsApp('Amouge oudh')">Buy Now</button>
+    </div>
+</div>
+          
+         <div class="product-card">
+    <img src="z10.jpeg" alt="1 million" onclick="orderWhatsApp('1 million')">
+
+    <h4>1 million</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('1 million','30ml',349)">30ml</button>
+        <button onclick="selectSize('1 million','60ml',499)">60ml</button>
+        <button onclick="selectSize('1 million','100ml',699)">100ml</button>
+
+        <div class="price" id="price-1 million">Select size</div>
+        <button class="buy-btn" id="buy-1 million" onclick="orderWhatsApp('1 million')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z11.jpeg" alt="Baqhoor" onclick="orderWhatsApp('Baqhoor')">
+
+    <h4>Baqhoor</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Baqhoor','30ml',350)">30ml</button>
+        <button onclick="selectSize('Baqhoor','60ml',499)">60ml</button>
+        <button onclick="selectSize('Baqhoor','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Baqhoor">Select size</div>
+        <button class="buy-btn" id="buy-Baqhoor" onclick="orderWhatsApp('Baqhoor')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z12.jpeg" alt="Tomford tobacco vanille" onclick="orderWhatsApp('Tomford tobacco vanille')">
+
+    <h4>Tomford tobacco vanille</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Tomford tobacco vanille','30ml',399)">30ml</button>
+        <button onclick="selectSize('Tomford tobacco vanille','60ml',549)">60ml</button>
+        <button onclick="selectSize('Tomford tobacco vanille','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Tomford tobacco vanille">Select size</div>
+        <button class="buy-btn" id="buy-Tomford tobacco vanille" onclick="orderWhatsApp('Tomford tobacco vanille')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z13.jpeg" alt="Amber wood" onclick="orderWhatsApp('Amber wood')">
+
+    <h4>Amber wood</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Amber wood','30ml',349)">30ml</button>
+        <button onclick="selectSize('Amber wood','60ml',499)">60ml</button>
+        <button onclick="selectSize('Amber wood','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Amber wood">Select size</div>
+        <button class="buy-btn" id="buy-Amber wood" onclick="orderWhatsApp('Amber wood')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z14.jpeg" alt="Oud white" onclick="orderWhatsApp('Oud white')">
+
+    <h4>Oud white</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Oud white','30ml',349)">30ml</button>
+        <button onclick="selectSize('Oud white','60ml',499)">60ml</button>
+        <button onclick="selectSize('Oud white','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Oud white">Select size</div>
+        <button class="buy-btn" id="buy-Oud white" onclick="orderWhatsApp('Oud white')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z15.jpeg" alt="Musk" onclick="orderWhatsApp('Musk')">
+
+    <h4>Musk</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Musk','30ml',349)">30ml</button>
+        <button onclick="selectSize('Musk','60ml',499)">60ml</button>
+        <button onclick="selectSize('Musk','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Musk">Select size</div>
+        <button class="buy-btn" id="buy-Musk" onclick="orderWhatsApp('Musk')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z16.jpeg" alt="Malikat amber" onclick="orderWhatsApp('Malikat amber')">
+
+    <h4>Malikat amber</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Malikat amber','30ml',299)">30ml</button>
+        <button onclick="selectSize('Malikat amber','60ml',449)">60ml</button>
+        <button onclick="selectSize('Malikat amber','100ml',650)">100ml</button>
+
+        <div class="price" id="price-Malikat amber">Select size</div>
+        <button class="buy-btn" id="buy-Malikat amber" onclick="orderWhatsApp('Malikat amber')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z17.jpeg" alt="Ameer al oudh" onclick="orderWhatsApp('Ameer al oudh')">
+
+    <h4>Ameer al oudh</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Ameer al oudh','30ml',349)">30ml</button>
+        <button onclick="selectSize('Ameer al oudh','60ml',499)">60ml</button>
+        <button onclick="selectSize('Ameer al oudh','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Ameer al oudh">Select size</div>
+        <button class="buy-btn" id="buy-Ameer al oudh" onclick="orderWhatsApp('Ameer al oudh')">Buy Now</button>
+    </div>
+</div>
+        <div class="product-card">
+    <img src="z18.jpeg" alt="purple oud" onclick="orderWhatsApp('purple oud')">
+
+    <h4>purple oud</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('purple oud','30ml',279)">30ml</button>
+        <button onclick="selectSize('purple oud','60ml',399)">60ml</button>
+        <button onclick="selectSize('purple oud','100ml',749)">100ml</button>
+
+        <div class="price" id="price-purple oud">Select size</div>
+        <button class="buy-btn" id="buy-purple oud" onclick="orderWhatsApp('purple oud')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z19.jpeg" alt="Noor al qamar" onclick="orderWhatsApp('Noor al qamar')">
+
+    <h4>Noor al qamar</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('Noor al qamar','30ml',349)">30ml</button>
+        <button onclick="selectSize('Noor al qamar','60ml',499)">60ml</button>
+        <button onclick="selectSize('Noor al qamar','100ml',699)">100ml</button>
+
+        <div class="price" id="price-Noor al qamar">Select size</div>
+        <button class="buy-btn" id="buy-Noor al qamar" onclick="orderWhatsApp('Noor al qamar')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z20.jpeg" alt="oud al amber" onclick="orderWhatsApp('oud al amber')">
+
+    <h4>oud al amber</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('oud al amber','30ml',349)">30ml</button>
+        <button onclick="selectSize('oud al amber','60ml',499)">60ml</button>
+        <button onclick="selectSize('oud al amber','100ml',699)">100ml</button>
+
+        <div class="price" id="price-oud al amber">Select size</div>
+        <button class="buy-btn" id="buy-oud al amber" onclick="orderWhatsApp('oud al amber')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z21.jpeg" alt="white oud" onclick="orderWhatsApp('white oud')">
+
+    <h4>white oud</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('white oud','30ml',349)">30ml</button>
+        <button onclick="selectSize('white oud','60ml',499)">60ml</button>
+        <button onclick="selectSize('white oud','100ml',699)">100ml</button>
+
+        <div class="price" id="price-white oud">Select size</div>
+        <button class="buy-btn" id="buy-white oud" onclick="orderWhatsApp('white oud')">Buy Now</button>
+    </div>
+</div>
+         <div class="product-card">
+    <img src="z22.jpeg" alt="CR7" onclick="orderWhatsApp('CR7')">
+
+    <h4>CR7</h4>
+
+    <div class="size-box">
+        <button onclick="selectSize('CR7','30ml',299)">30ml</button>
+        <button onclick="selectSize('CR7','60ml',399)">60ml</button>
+        <button onclick="selectSize('CR7','100ml',649)">100ml</button>
+
+        <div class="price" id="price-CR7">Select size</div>
+        <button class="buy-btn" id="buy-CR7" onclick="orderWhatsApp('CR7')">Buy Now</button>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <h3>Contact Us</h3>
+
+    <p>
+         WhatsApp: 
+        <a href="https://wa.me/919900895880" target="_blank" style="color:gold; text-decoration:none;">
+            click here
+        </a>
+    </p>
+
+    <p>
+         Email: 
+        <a href="mailto:mohdu0893@gmail.com" style="color:gold; text-decoration:none;">
+            mohdu0893@gmail.com
+        </a>
+    </p>
+
+    <p>
+         Instagram: 
+        <a href="https://instagram.com/zoom_perfumery" target="_blank" style="color:gold; text-decoration:none;">
+            zoom_perfumery
+        </a>
+    </p>
+
+    <p>
+         WhatsApp Group: 
+        <a href="https://chat.whatsapp.com/KH0TGUpvhCO9d8wDreB25C" target="_blank" style="color:gold; text-decoration:none;">
+            Join Our Fragrance Community
+        </a>
+    </p>
+</section>
+
+
+<footer>
+    <p>© 2025 ZOOM ATTAR AND PERFUME. All Rights Reserved.</p>
+</footer>
+
+<script>
+let selectedProduct = {};
+let selectedSize = {};
+let selectedPrice = {};
+
+function comingSoon() {
+    alert("scroll down.");
+}
+
+function selectSize(product, size, price) {
+    selectedProduct[product] = product;
+    selectedSize[product] = size;
+    selectedPrice[product] = price;
+
+    document.getElementById(`price-${product}`).innerText =
+        `${size} - ₹${price}`;
+
+    // Buy Now button 
+    document.getElementById(`buy-${product}`).style.display = "block";
+}
+
+function orderWhatsApp(product) {
+    if (!selectedSize[product]) {
+        alert("Please select size first");
+        return;
+    }
+
+    const phoneNumber = "919900895880";
+
+    const message = `
+ZOOM ATTAR AND PERFUME Order
+-------------------
+Product: ${product}
+Size: ${selectedSize[product]}
+Price: ₹${selectedPrice[product]}
+
+Please confirm availability.
+`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+
+</body>
+</html>
